@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyOneGetOne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bogo-container">
+        <h2>YAY! It's BOGO</h2>
+        
+        <!-- First card: Buy 1 Get 2 -->
+        <div class="card" id="card1" onclick="toggleDetails('card1Details')">
+            <div class="discount-box">
+            <div >30% Off</div>
+            </div>
+            <input type="radio" name="bogo" value="18.00">
+            <div class="info-box">
+            <span>Buy 1 Get 2</span><br>
+            <span class="price">$18.00 USD</span>
+            </div>     
+        </div>
+        <div id="card1Details" class="details">
+            <div class="details-header">
+                <div>
+                    <input type="radio" name="bogo" value="18.00">
+                </div>
+                <div><span>Buy 1 Get 2</span> &nbsp;
+                    <span class="discount">30% Off</span>
+                    <br>
+                    <span class="price">$18.00 USD</span>
+                </div>
+            </div>
+            <form >
+                <div class="form-grid">
+                    <!-- Header row -->
+                    <div>Size</div>
+                    <div>Colour</div>
+                    <br>
+                </div>
+           
+                <!-- Item #1 -->
+                <div class="from-details">  
+                <div>
+                    <span>#1</spans>
+                    <!-- <label for="size1">Size:</label> -->
+                    <select id="size1" name="size1">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                    
+                    <!-- <label for="color1">Color:</label> -->
+                    <select id="color1" name="color1">
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="grey">Grey</option>
+                    </select>
+                </div>
+                <br>
+
+                <!-- Item #2 -->
+                <div>
+                    <span>#2</spans>
+                    <!-- <label for="size2">Size:</label> -->
+                    <select id="size2" name="size2">
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                    
+                    <!-- <label for="color2">Color:</label> -->
+                    <select id="color2" name="color2">
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="grey">Grey</option>
+                    </select>
+                </div>
+            </div>
+            </form>
+            
+        </div>
+       
+
+        <!-- Second card: Buy 2 Get 4 -->
+        <div class="card" id="card2" onclick="toggleDetails('card2Details')">
+            <div class="discount-box">
+            <div>30% Off</div>
+            </div>
+            <input type="radio" name="bogo" value="24.00">
+            <div class="info-box">
+            <span>Buy 2 Get 4</span><br>
+            <span class="price">$24.00 USD</span>
+            </div>
+            <span class="tag">Most Popular</span>
+            
+        </div>
+    
+        <div id="card2Details" class="details">
+            <div class="details-header">
+                <div><input type="radio" name="bogo" value="24.00"></div>
+                <div><span>Buy 2 Get 4</span> &nbsp;
+                    <span class="discount" >30% Off</span>
+                    
+                    <br>
+                    <span class="price">$28.00 USD</span>&nbsp;
+                    <span class="tag">Most Popular</span>
+                </div>
+               
+                    
+                
+                
+            </div>
+            
+            
+            <form>
+                <div class="form-grid">
+                    <!-- Header row -->
+                    <div class="header">Size</div>
+                    <div class="header">Colour</div>
+                    <br>
+                </div>
+           
+                <!-- Item #1 -->
+                <div class="from-details">  
+                    <div>
+                        <span>#1</spans>
+                        <!-- <label for="size1">Size:</label> -->
+                        <select id="size1" name="size1">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        
+                        <!-- <label for="color1">Color:</label> -->
+                        <select id="color1" name="color1">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <!-- Item #2 -->
+                    <div>
+                        <span>#2</spans>
+                        <!-- <label for="size2">Size:</label> -->
+                        <select id="size2" name="size2">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        
+                        <!-- <label for="color2">Color:</label> -->
+                        <select id="color2" name="color2">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+                    </div>
+                </div>  
+            </form>
+            
+        </div>
+
+        <!-- third card: Buy 3 Get 6 -->
+
+        <div class="card" id="card3" onclick="toggleDetails('card3Details')">
+            <div class="discount-box">
+            <div >10% Off</div>
+            </div>
+            <input type="radio" name="bogo" value="36.00">
+            <div class="info-box">
+            <span>Buy 3 Get 6</span><br>
+            <span class="price">$36.00 USD</span>
+            <span class="old-price">$10.00 USD</span> 
+            </div>
+            
+        </div>
+
+                
+        <div id="card3Details" class="details">
+            <div class="details-header">
+                <div><input type="radio" name="bogo" value="36.00"></div>
+                <div><span>Buy 3 Get 6</span> &nbsp;
+                    <span class="discount" >10% Off</span>
+                    <br>
+                    <span class="price">$36.00 USD</span>&nbsp;<span class="old-price">$10.00 USD</span>
+                </div>
+            </div>
+            
+            
+            <form>
+                <div class="form-grid">
+                    <!-- Header row -->
+                    <div class="header">Size</div>
+                    <div class="header">Colour</div>
+                    <br>
+                </div>
+        
+                <!-- Item #1 -->
+                <div class="from-details">
+                    <div>
+                        <span>#1</spans>
+                        <!-- <label for="size1">Size:</label> -->
+                        <select id="size1" name="size1">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        
+                        <!-- <label for="color1">Color:</label> -->
+                        <select id="color1" name="color1">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+                    </div>
+                    <br>
+        
+                    <!-- Item #2 -->
+                    <div>
+                        <span>#2</spans>
+                        <!-- <label for="size2">Size:</label> -->
+                        <select id="size2" name="size2">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                        
+                        <!-- <label for="color2">Color:</label> -->
+                        <select id="color2" name="color2">
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+                
+            </form>
+            
+        </div>
+    
+        <div class="delivery-info">
+            <span>Free Delivery</span>
+            <p class="total-price">Total : $<span id="totalPrice">0.00</span></p>
+        </div>
+            <button class="add-to-cart"> + Add to Cart</button>
+        
+
+
+    <footer>
+        <p class="powered-by">Powered by <span>Pumper</span></p> 
+    </footer>
+</div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
